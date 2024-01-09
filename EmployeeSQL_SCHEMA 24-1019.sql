@@ -40,7 +40,7 @@ SELECT * FROM dept_emp
 
 
 CREATE TABLE dept_manager (
-	dept_no VARCHAR(5) NOT NULL REFERENCES departments(dept_no),
+	dept_no VARCHAR(5) NOT NULL,
 	emp_no INT NOT NULL,
 	PRIMARY KEY(dept_no, emp_no)
 );
